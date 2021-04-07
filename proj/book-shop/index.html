@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books Shop</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body onload="onInit()">
+    <h1>WELCOME TO MY BOOKSHOP</h1>
+    <section class="book-container">
+        <section class="book-manage-table">
+            <div class="form-popup-container" id="myForm">
+                <button class="add-book-btn" onclick="onAddBook()">Add new book</button>
+                <form class="form-container">
+                    <label for="bookName"><b>Book name</b></label>
+                    <input type="text" name="bookName">
+
+                    <label for="bookPrice"><b>Book price</b></label>
+                    <input type="text" name="bookPrice">
+                    <button type="submit" onclick="onAddBookSubmit(event)">Submit</button>
+                </form>
+            </div>
+            <button class="table-title-btn" onclick="onSortArea()">Mange book table </button>
+            <section class="sort-container">
+                <span>Sort by:</span>
+                <section class="radio-container">
+                    <label class="radio" for="name">Name</label>
+                    <input class="radio" type="radio" id="name" name="sort" value="male">
+                    <label class="radio" for="male">Price</label>
+                    <input class="radio" type="radio" id="price" name="sort" value="male">
+                </section>
+            </section>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <td class="td-title">Id</td>
+                        <td class="td-title">Title</td>
+                        <td class="td-title">Price </td>
+                        <td class="td-title" class="avtions">Actions</td>
+                    </tr>
+                </thead>
+                <tbody class="books-table"></tbody>
+            </table>
+        </section>
+        <!-- <section class="new-book-info"></section> -->
+        <section class="modal-container">
+            <section class="detail-model"></section>
+        </section>
+    </section>
+    <script src="./js/util.js"></script>
+    <script src="./js/storage.service.js"></script>
+    <script src="./js/bookshop.service.js"></script>
+    <script src="./js/bookshop.controller.js"></script>
+<!-- <img src="./img/book-back.jpeg"> -->
+</body>
+
+</html>

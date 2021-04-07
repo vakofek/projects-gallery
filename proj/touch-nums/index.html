@@ -1,0 +1,32 @@
+<html>
+<header>
+    <title>Touch-Nums</title>
+    <link rel="stylesheet" href="./css/main.css">
+</header>
+
+<body onload="init()">
+    <h1>Touch-Nums</h1>
+    <div class="level-radio">
+        <input class="ra" type="radio" name="level" onclick="setBoardSize(this)" value="16" checked> Standard (16)
+        <input class="ra" type="radio" name="level" onclick="setBoardSize(this)" value="25"> Hard (25)
+        <input class="ra" type="radio" name="level" onclick="setBoardSize(this)" value="36"> Legendary (36)
+    </div>
+    <div class="next-num-box"></div>
+    <div class="timer-box"></div>
+    <div>
+        <span class="finish-msg"></span>
+        <table class="table" border="1" cellpadding="10">
+            <tbody class="board"></tbody>
+        </table>
+    </div>
+
+
+    <!-- <button class="new-game-btn" onclick="reset()">New Game</button> -->
+
+
+
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>

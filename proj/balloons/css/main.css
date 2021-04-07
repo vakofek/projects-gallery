@@ -1,0 +1,82 @@
+body {
+    background-color: black;
+    color: coral;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.btnDiv {
+    text-align: center;
+}
+
+.btnDiv button {
+    text-align: center;
+    background-color: rgb(219, 146, 120);
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+}
+
+.balloon {
+    width: 100px;
+    height: 100px;
+    border-radius: 80%;
+    position: absolute;
+    box-shadow: inset -10px -10px 0 rgba(0, 0, 0, 0.07);
+    transition: 0.5s ;
+    z-index: 10;
+    margin: 20px 30px;
+    bottom: 25px;
+}
+
+.balloon:before {
+    content: "▲";
+    font-size: 20px;
+    color: hsl(215, 30%, 50%);
+    display: block;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: -12px;
+    z-index: -100;
+}
+
+/* .balloon{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 25px;
+    
+} */
+
+.balloon1 {
+    left: auto;
+}
+
+.balloon2 {
+    left: auto;
+}
+
+.balloon2 {
+    left: auto;
+}
+
+.balloon2 {
+    left: auto;
+}
+
+.balloon2 {
+    left: auto;
+}
